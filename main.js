@@ -49,31 +49,31 @@ if (keyPressed=='40'){
 function up() {
  if(rover_y>=0)
  {rover_y=rover_y-10;
-  uploadrover();
-  uploadBackground();
+   uploadBackground();
+   uploadrover();
 }
 }
 
 function down() {
  if(rover_y<=500)
  {rover_y=rover_y+10;
-  uploadrover();
   uploadBackground();
+    uploadrover();
  }
 }
 
 function left() {
  if(rover_x>=0)
  {rover_x=rover_x-10;
-  uploadrover();
   uploadBackground();
+    uploadrover();
  }
 }
 
 function right() {
  if(rover_x<=700)
  {rover_x=rover_x+10;
-  uploadrover();
   uploadBackground();
+    uploadrover();
  }
 }
