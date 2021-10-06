@@ -18,7 +18,7 @@ function add() {
         rover_imgTag.src=rover_image; 
     }
         function uploadBackground() {       
-        ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.rover_height);
+        ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
         }
         function uploadrover() {
 ctx.drawImage(rover_imgTag, rover_x, rover_y, rover_width, rover_height);
