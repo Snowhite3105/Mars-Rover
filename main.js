@@ -1,6 +1,6 @@
 canvas= document.getElementById("myCanvas");
 ctx= canvas.getContext("2d");
-nasa_mars_images_array= [];
+nasa_mars_images_array= ["nasa_image_1.jpg", "nasa_image_2.jpeg", "nasa_image_3.jpg", "nasa_image_4.jpg"];
 random_number= Math.floor(Math.random()*4);
 console.log(random_number);
 rover_width= 100;
@@ -46,3 +46,34 @@ if (keyPressed=='40'){
             }
         }
        
+function up() {
+ if(rover_y>=0)
+ {rover_y=rover_y-10;
+  uploadrover();
+  uploadBackground();
+}
+}
+
+function down() {
+ if(rover_y<=500)
+ {rover_y=rover_y+10;
+  uploadrover();
+  uploadBackground();
+ }
+}
+
+function left() {
+ if(rover_x>=0)
+ {rover_x=rover_x-10;
+  uploadrover();
+  uploadBackground();
+ }
+}
+
+function right() {
+ if(rover_x<=700)
+ {rover_x=rover_x+10;
+  uploadrover();
+  uploadBackground();
+ }
+}
