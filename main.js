@@ -45,4 +45,4 @@ if (keyPressed=='40'){
             console.log("right");
             }
         }
-        
+       
